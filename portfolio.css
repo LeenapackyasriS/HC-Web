@@ -1,0 +1,141 @@
+/* ===== Portfolio page (loads after style.css) ===== */
+
+/* Hero */
+.pf-hero{
+  background:var(--navy) url('images/Focused_Engineer_Inspecting_Orange_3D_Print.png') right center/cover no-repeat;
+  padding-top:72px;color:#fff;position:relative
+}
+.pf-hero-inner{padding-top:50px;padding-bottom:36px;min-height:400px}
+.pf-hero h1{font-size:clamp(2.1rem,4.6vw,3.2rem);font-weight:700;line-height:1.08;margin:10px 0 16px}
+.pf-hero h1 span{color:var(--orange)}
+.pf-hero p{max-width:470px;color:#dbe3ee;font-size:.93rem;margin-bottom:24px}
+.pf-hero-features{display:flex;gap:30px;flex-wrap:wrap;margin-top:34px}
+
+/* Section head + search */
+.pf-section{background:var(--light);padding:50px 0 56px}
+.pf-head{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;margin-bottom:26px}
+.pf-head h2{font-size:clamp(1.6rem,3vw,2.1rem);font-weight:700;color:var(--navy);line-height:1.2;margin:4px 0 8px}
+.pf-head p{color:var(--muted);max-width:620px;font-size:.93rem}
+.pf-search{
+  display:flex;align-items:center;gap:10px;background:#eef2f7;border:1px solid var(--border);
+  border-radius:8px;padding:0 16px;height:44px;width:300px;max-width:100%;color:var(--muted)
+}
+.pf-search input{border:none;background:none;outline:none;font:inherit;font-size:.85rem;width:100%;color:var(--text)}
+.pf-search:focus-within{border-color:var(--orange);background:#fff}
+
+/* Filters */
+.pf-filters{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:28px}
+.pf-chip{
+  padding:11px 24px;font-size:.82rem;font-weight:500;border-radius:8px;
+  background:#eef2f7;color:var(--text);border:1px solid transparent;transition:.2s
+}
+.pf-chip:hover{border-color:var(--orange);color:var(--orange)}
+.pf-chip.active{background:var(--orange);color:#fff}
+
+/* Grid + cards */
+.pf-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.pf-card{
+  display:block;background:#fff;border:1px solid var(--border);border-radius:8px;overflow:hidden;
+  box-shadow:0 4px 16px rgba(10,26,48,.05);transition:.3s
+}
+.pf-card.hide{display:none}
+.pf-card:hover{transform:translateY(-6px);box-shadow:0 16px 34px rgba(10,26,48,.14)}
+.pf-img{aspect-ratio:4/3;overflow:hidden;background:linear-gradient(135deg,#1b2a44,#0a1a30)}
+.pf-img img{width:100%;height:100%;object-fit:cover;transition:.6s}
+.pf-img img.alt-crop{object-position:center 25%;transform:scale(1.15)}
+.pf-card:hover .pf-img img{transform:scale(1.08)}
+.pf-card:hover .pf-img img.alt-crop{transform:scale(1.22)}
+.pf-info{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:14px 16px}
+.pf-info h3{font-size:.88rem;font-weight:600;color:var(--navy);line-height:1.3}
+.pf-info span{font-size:.72rem;color:var(--muted)}
+.pf-info i{
+  flex:none;width:30px;height:30px;border-radius:50%;border:1.5px solid var(--navy);
+  display:grid;place-items:center;font-size:.85rem;color:var(--navy);transition:.3s
+}
+.pf-card:hover .pf-info i{background:var(--orange);border-color:var(--orange);color:#fff}
+
+.pf-empty{display:none;text-align:center;color:var(--muted);padding:40px 0}
+.pf-empty.show{display:block}
+
+/* Load more */
+.pf-more{text-align:center;margin-top:34px}
+.btn-load{
+  display:inline-flex;align-items:center;gap:8px;padding:12px 34px;border:1.5px solid var(--navy);
+  border-radius:6px;font-weight:600;font-size:.85rem;color:var(--navy);background:#fff;transition:.25s
+}
+.btn-load:hover{background:var(--navy);color:#fff}
+
+/* Achievements */
+.pf-stats{background:var(--navy);color:#fff;padding:30px 0}
+.pf-stats-inner{display:grid;grid-template-columns:1fr 2.4fr;align-items:center;gap:20px}
+.pf-stats-title h2{font-size:1.6rem;font-weight:700;line-height:1.2;margin-top:4px}
+.pf-stats-grid{display:grid;grid-template-columns:repeat(4,1fr)}
+.pf-stats-grid .stat:first-child{border-left:1px solid rgba(255,255,255,.14)}
+
+/* Process */
+.pf-process{
+  position:relative;padding:50px 0 54px;
+  background:#f3f8fe url('images/Lattice_Vase_in_a_Warm_3D_Studio.png') right center/cover no-repeat
+}
+.pf-process h2{font-size:clamp(1.6rem,3vw,2.1rem);font-weight:700;color:var(--navy);margin:4px 0 8px}
+.pf-process-sub{color:var(--muted);font-size:.93rem;max-width:480px;margin-bottom:30px}
+.pf-steps{display:flex;align-items:flex-start;gap:14px;max-width:680px}
+.pf-step{flex:1;text-align:center}
+.pf-step-icon{
+  width:60px;height:60px;margin:0 auto 10px;border-radius:50%;background:var(--orange);color:#fff;
+  display:grid;place-items:center;font-size:1.5rem;box-shadow:0 8px 20px rgba(255,90,0,.3)
+}
+.pf-step h4{font-size:1.1rem;color:var(--navy);line-height:1.2}
+.pf-step h5{font-size:.95rem;color:var(--navy);margin-bottom:4px}
+.pf-step p{font-size:.72rem;color:var(--muted);line-height:1.4}
+.pf-arrow{color:#98a3b5;margin-top:22px;font-size:1.2rem}
+
+/* CTA */
+.pf-cta{
+  background:var(--navy) url('images/Cinematic_Orange_3D_Printing_Workshop.png') left center/cover no-repeat;
+  color:#fff;padding:44px 0;position:relative
+}
+.pf-cta-inner{display:flex;align-items:center;justify-content:space-between;gap:30px;padding-left:max(24px,36%)}
+.cta-eyebrow{display:block;color:var(--orange);font-size:.7rem;font-weight:700;letter-spacing:.5px}
+.pf-cta h2{font-size:1.6rem;font-weight:700;margin:4px 0 6px}
+.pf-cta p{color:#dbe3ee;font-size:.92rem;margin-bottom:18px}
+.pf-cta .cta-points{display:flex;flex-direction:column;gap:18px}
+.pf-cta .cta-points li{display:flex;gap:10px;align-items:center;font-size:.82rem}
+.pf-cta .cta-points i{color:var(--orange);font-size:1.2rem}
+
+/* Footer active link */
+.footer .f-active{color:var(--orange)}
+
+/* ===== Responsive ===== */
+@media (max-width:1024px){
+  .pf-grid{grid-template-columns:repeat(3,1fr)}
+  .pf-stats-inner{grid-template-columns:1fr}
+  .pf-stats-grid .stat:first-child{border-left:none}
+}
+@media (max-width:860px){
+  .pf-grid{grid-template-columns:repeat(2,1fr)}
+  .pf-hero{background-position:72% center}
+  .pf-hero::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,26,48,.94) 35%,rgba(10,26,48,.5))}
+  .pf-hero>*{position:relative}
+  .pf-hero-features{gap:20px 26px}
+  .pf-stats-grid{grid-template-columns:repeat(2,1fr);gap:22px 0}
+  .pf-stats-grid .stat:nth-child(2){border-right:none}
+  .pf-process::before{content:"";position:absolute;inset:0;background:rgba(243,248,254,.88)}
+  .pf-process>*{position:relative}
+  .pf-steps{flex-wrap:wrap;max-width:100%}
+  .pf-step{flex:1 1 40%}
+  .pf-arrow{display:none}
+  .pf-cta::before{content:"";position:absolute;inset:0;background:rgba(10,26,48,.82)}
+  .pf-cta>*{position:relative}
+  .pf-cta-inner{flex-direction:column;align-items:flex-start;padding-left:24px}
+  .pf-cta .cta-points{flex-direction:row;flex-wrap:wrap;gap:14px 24px}
+}
+@media (max-width:560px){
+  .pf-grid{grid-template-columns:1fr}
+  .pf-search{width:100%}
+  .pf-filters{flex-wrap:nowrap;overflow-x:auto;padding-bottom:8px;scrollbar-width:none}
+  .pf-filters::-webkit-scrollbar{display:none}
+  .pf-chip{white-space:nowrap;padding:10px 18px}
+  .pf-hero-inner{padding-top:38px;min-height:0}
+  .pf-stats-title h2{font-size:1.35rem}
+}

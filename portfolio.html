@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Hoppy Creators 3D Printing Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="logo">
+        <svg viewBox="0 0 40 40" width="42" height="42" aria-hidden="true">
+          <path d="M20 3 35 11.5v17L20 37 5 28.5v-17z" fill="#ff5a00"/>
+          <path d="M20 3 35 11.5 20 20 5 11.5z" fill="#ff8a3d"/>
+          <path d="M20 20v17L5 28.5v-17z" fill="#d94700"/>
+          <path d="M20 14 28 18.5v9L20 32l-8-4.5v-9z" fill="#fff"/>
+        </svg>
+        <span class="logo-text"><strong>HOPPY</strong><small>CREATORS</small><em>3D PRINTING STUDIO</em></span>
+      </a>
+
+      <nav class="nav" id="nav">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="portfolio.html" class="active">Portfolio</a>
+        <a href="index.html#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="#contact" class="btn btn-primary nav-cta-mobile">Get a Quote</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="icon-btn" aria-label="Search"><i class="bi bi-search"></i></button>
+        <a href="#contact" class="btn btn-primary btn-sm nav-cta">Get a Quote <i class="bi bi-arrow-right"></i></a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Menu"><i class="bi bi-list"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="pf-hero">
+    <div class="container pf-hero-inner">
+      <span class="eyebrow">OUR WORK</span>
+      <h1>Ideas Printed<br>Into <span>Reality</span></h1>
+      <p>Explore a collection of our 3D printing projects across different categories and industries. From detailed figurines to functional parts, every project reflects our commitment to quality and creativity.</p>
+      <a href="#contact" class="btn btn-primary">Get a Quote <i class="bi bi-arrow-right"></i></a>
+
+      <div class="pf-hero-features">
+        <div class="hf"><span class="ring"><i class="bi bi-vector-pen"></i></span><p>Custom<br>Designs</p></div>
+        <div class="hf"><span class="ring"><i class="bi bi-bullseye"></i></span><p>High<br>Precision</p></div>
+        <div class="hf"><span class="ring"><i class="bi bi-layers"></i></span><p>Multiple<br>Materials</p></div>
+        <div class="hf"><span class="ring"><i class="bi bi-stars"></i></span><p>Unique<br>Creations</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section class="pf-section">
+    <div class="container">
+      <div class="pf-head">
+        <div>
+          <span class="eyebrow">OUR PORTFOLIO</span>
+          <h2>Featured 3D Printing Projects</h2>
+          <p>A glimpse of our recent work across various categories. Each project is designed and printed with precision, combining creativity and technology.</p>
+        </div>
+        <label class="pf-search">
+          <i class="bi bi-search"></i>
+          <input type="text" id="searchInput" placeholder="Search projects...">
+        </label>
+      </div>
+
+      <div class="pf-filters" id="filters">
+        <button class="pf-chip active" data-filter="all">All Projects</button>
+        <button class="pf-chip" data-filter="figurines">Figurines</button>
+        <button class="pf-chip" data-filter="prototypes">Prototypes</button>
+        <button class="pf-chip" data-filter="functional">Functional Parts</button>
+        <button class="pf-chip" data-filter="architectural">Architectural Models</button>
+        <button class="pf-chip" data-filter="cosplay">Cosplay</button>
+        <button class="pf-chip" data-filter="custom">Custom Projects</button>
+      </div>
+
+      <div class="pf-grid" id="pfGrid">
+
+        <a href="#" class="pf-card" data-cat="figurines" data-name="Fantasy Dragon Figurine">
+          <div class="pf-img"><img src="images/Vivid_Orange_Dragon_in_the_Workshop__1_.png" alt="Fantasy Dragon Figurine" onerror="this.style.display='none'"></div>
+          <div class="pf-info"><div><h3>Fantasy Dragon Figurine</h3><span>Figurines &bull; Resin</span></div><i class="bi bi-arrow-right"></i></div>
+        </a>
+
+        <a href="#" class="pf-card" data-cat="functional" data-name="Functional Prototype">
+          <div class="pf-img"><img src="images/Precision-Machined_Flanged_Housing__1_.png" alt="Functional Prototype" onerror="this.style.display='none'"></div>
+          <div class="pf-info"><div><h3>Functional Prototype</h3><span>Functional Parts &bull; FDM</span></div><i class="bi bi-arrow-right"></i></div>
+        </a>
+
+        <a href="#" class="pf-card" data-cat="architectural" data-name="Architectural Model">
+          <div class="pf-img"><img src="images/Miniature_Ivory_Palace_Workshop_Display__1_.png" alt="Architectural Model" onerror="this.style.display='none'"></div>
+          <div class="pf-info"><div><h3>Architectural Model</h3><span>Architectural &bull; Resin</span></div><i class="bi bi-arrow-right"></i></div>
+        </a>
+
+        <a href="#" class="pf-card" data-cat="cosplay" data-name="Cosplay Helmet">
+          <div class="pf-img"><img src="images/Futuristic_Helmet_in_a_Warm_Workshop__1_.png" alt="Cosplay Helmet" onerror="this.style.display='none'"></div>
+          <div class="pf-info"><div><h3>Cosplay Helmet</h3><span>Cosplay &bull; Resin</span></div><i class="bi bi-arrow-right"></i></div>
+        </a>
+
+        <a href="#" class="pf-card" data-cat="functional" data-name="Gear Assembly">
+          <div class="pf-img"><img src="images/Interlocking_Gears_in_a_Warm_Maker_Workshop.png" alt="Gear Assembly" onerror="this.style.display='none'"></div>
+          <div class="pf-info"><div><h3>Gear Assembly</h3><span>Functional Parts &bull; FDM</span></div><i class="bi bi-arrow-right"></i></div>
+        </a>
+
+        <a href="#" class="pf-card" data-cat="custom" data-name="Decorative Vase">
+          <div class="pf-img"><img src="images/Lattice_Orange_Vase_in_Maker_Workshop.png" alt="Decorative Vase" onerror="this.style.display='none'"></div>
+          <div class="pf-info"><div><h3>Decorative Vase</h3><span>Custom Projects &bull; Resin</span></div><i class="bi bi-arrow-right"></i></div>
+        </a>
+
+        <a href="#" class="pf-card" data-cat="figurines" data-name="Custom Figurines">
+          <div class="pf-img"><img src="images/Trio_of_Warmly_Lit_3D-Printed_Cats.png" alt="Custom Figurines" onerror="this.style.display='none'"></div>
+          <div class="pf-info"><div><h3>Custom Figurines</h3><span>Figurines &bull; Resin</span></div><i class="bi bi-arrow-right"></i></div>
+        </a>
+
+        <a href="#" class="pf-card" data-cat="functional" data-name="Custom Enclosure">
+          <div class="pf-img"><img src="images/3D-Printed_Mechanical_Housings_Workshop_Display__1_.png" alt="Custom Enclosure" onerror="this.style.display='none'"></div>
+          <div class="pf-info"><div><h3>Custom Enclosure</h3><span>Functional Parts &bull; FDM</span></div><i class="bi bi-arrow-right"></i></div>
+        </a>
+
+        <a href="#" class="pf-card" data-cat="prototypes" data-name="Car Prototype">
+          <div class="pf-img"><img src="images/car-prototype.png" alt="Car Prototype" onerror="this.style.display='none'"></div>
+          <div class="pf-info"><div><h3>Car Prototype</h3><span>Prototypes &bull; FDM</span></div><i class="bi bi-arrow-right"></i></div>
+        </a>
+
+        <a href="#" class="pf-card" data-cat="prototypes" data-name="Medical Model">
+          <div class="pf-img"><img src="images/Lattice_Heart_in_the_Maker_Lab__1_.png" alt="Medical Model" onerror="this.style.display='none'"></div>
+          <div class="pf-info"><div><h3>Medical Model</h3><span>Prototypes &bull; Resin</span></div><i class="bi bi-arrow-right"></i></div>
+        </a>
+
+        <a href="#" class="pf-card" data-cat="functional" data-name="Drone Component">
+          <div class="pf-img"><img src="images/drone-component.png" alt="Drone Component" onerror="this.style.display='none'"></div>
+          <div class="pf-info"><div><h3>Drone Component</h3><span>Functional Parts &bull; FDM</span></div><i class="bi bi-arrow-right"></i></div>
+        </a>
+
+        <a href="#" class="pf-card" data-cat="architectural" data-name="Temple Model">
+          <div class="pf-img"><img class="alt-crop" src="images/Miniature_Ivory_Palace_Workshop_Display__1_.png" alt="Temple Model" onerror="this.style.display='none'"></div>
+          <div class="pf-info"><div><h3>Temple Model</h3><span>Architectural &bull; Resin</span></div><i class="bi bi-arrow-right"></i></div>
+        </a>
+
+      </div>
+
+      <p class="pf-empty" id="pfEmpty">No projects found. Try another search or category.</p>
+
+      <div class="pf-more">
+        <button class="btn-load" id="loadMore">Load More Projects <i class="bi bi-arrow-right"></i></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACHIEVEMENTS -->
+  <section class="pf-stats">
+    <div class="container pf-stats-inner">
+      <div class="pf-stats-title">
+        <span class="eyebrow">OUR ACHIEVEMENTS</span>
+        <h2>Turning Concepts<br>Into Creative Prints</h2>
+      </div>
+      <div class="pf-stats-grid">
+        <div class="stat"><i class="bi bi-file-earmark-text"></i><h3><span class="count" data-target="150">0</span>+</h3><p>Projects Completed</p></div>
+        <div class="stat"><i class="bi bi-people"></i><h3><span class="count" data-target="100">0</span>+</h3><p>Happy Customers</p></div>
+        <div class="stat"><i class="bi bi-gear"></i><h3><span class="count" data-target="10">0</span>+</h3><p>Materials &amp; Finishes</p></div>
+        <div class="stat"><i class="bi bi-trophy"></i><h3><span class="count" data-target="3">0</span>+</h3><p>Years of Experience</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="pf-process">
+    <div class="container">
+      <span class="eyebrow">OUR PROCESS</span>
+      <h2>From Idea to Final Print</h2>
+      <p class="pf-process-sub">We follow a simple and transparent process to bring your ideas to life with precision and quality.</p>
+
+      <div class="pf-steps">
+        <div class="pf-step">
+          <span class="pf-step-icon"><i class="bi bi-chat-square-text"></i></span>
+          <h4>01</h4><h5>Discuss</h5>
+          <p>Share your idea and requirements.</p>
+        </div>
+        <i class="bi bi-arrow-right pf-arrow"></i>
+        <div class="pf-step">
+          <span class="pf-step-icon"><i class="bi bi-vector-pen"></i></span>
+          <h4>02</h4><h5>Design</h5>
+          <p>We review and prepare the design.</p>
+        </div>
+        <i class="bi bi-arrow-right pf-arrow"></i>
+        <div class="pf-step">
+          <span class="pf-step-icon"><i class="bi bi-printer"></i></span>
+          <h4>03</h4><h5>Print</h5>
+          <p>High-quality printing with precision.</p>
+        </div>
+        <i class="bi bi-arrow-right pf-arrow"></i>
+        <div class="pf-step">
+          <span class="pf-step-icon"><i class="bi bi-box-seam"></i></span>
+          <h4>04</h4><h5>Finish &amp; Deliver</h5>
+          <p>Final checks and safe delivery.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="pf-cta" id="contact">
+    <div class="container pf-cta-inner">
+      <div class="pf-cta-text">
+        <span class="cta-eyebrow">HAVE A PROJECT IN MIND?</span>
+        <h2>Let's Print Something Amazing</h2>
+        <p>Get a custom quote for your 3D printing project today.</p>
+        <div class="hero-btns">
+          <a href="mailto:your@email.com" class="btn btn-primary btn-sm">Get a Quote <i class="bi bi-arrow-right"></i></a>
+          <a href="tel:+910000000000" class="btn btn-outline btn-sm">Contact Us</a>
+        </div>
+      </div>
+      <ul class="cta-points">
+        <li><i class="bi bi-check-circle"></i> Quick Response</li>
+        <li><i class="bi bi-check-circle"></i> Expert Guidance</li>
+        <li><i class="bi bi-check-circle"></i> Custom Solutions</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="f-brand">
+        <a href="index.html" class="logo logo-light">
+          <svg viewBox="0 0 40 40" width="42" height="42" aria-hidden="true">
+            <path d="M20 3 35 11.5v17L20 37 5 28.5v-17z" fill="#ff5a00"/>
+            <path d="M20 3 35 11.5 20 20 5 11.5z" fill="#ff8a3d"/>
+            <path d="M20 20v17L5 28.5v-17z" fill="#d94700"/>
+            <path d="M20 14 28 18.5v9L20 32l-8-4.5v-9z" fill="#fff"/>
+          </svg>
+          <span class="logo-text"><strong>HOPPY</strong><small>CREATORS</small></span>
+        </a>
+        <p>Professional 3D printing solutions for prototypes, custom models, educational tools and innovative products.</p>
+        <div class="socials">
+          <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+      <div>
+        <h5>Quick Links</h5>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html" class="f-active">Portfolio</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Our Services</h5>
+        <ul>
+          <li><a href="#">3D Printing</a></li>
+          <li><a href="#">CAD Modelling</a></li>
+          <li><a href="#">Prototyping</a></li>
+          <li><a href="#">Custom Projects</a></li>
+          <li><a href="#">Finishing &amp; Post-Processing</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Get in Touch</h5>
+        <ul class="contact-list">
+          <li><i class="bi bi-geo-alt-fill"></i> Your Address Here</li>
+          <li><i class="bi bi-envelope-fill"></i> your@email.com</li>
+          <li><i class="bi bi-telephone-fill"></i> Your Phone Number</li>
+          <li><i class="bi bi-pin-map-fill"></i> Location, City</li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© 2026 Hoppy Creators. All rights reserved.</span>
+      <span><a href="#">Privacy Policy</a> &nbsp;|&nbsp; <a href="#">Terms of Service</a></span>
+    </div>
+  </footer>
+
+  <script src="portfolio.js"></script>
+</body>
+</html>

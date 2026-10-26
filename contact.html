@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Hoppy Creators 3D Printing Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="logo">
+        <svg viewBox="0 0 40 40" width="42" height="42" aria-hidden="true">
+          <path d="M20 3 35 11.5v17L20 37 5 28.5v-17z" fill="#ff5a00"/>
+          <path d="M20 3 35 11.5 20 20 5 11.5z" fill="#ff8a3d"/>
+          <path d="M20 20v17L5 28.5v-17z" fill="#d94700"/>
+          <path d="M20 14 28 18.5v9L20 32l-8-4.5v-9z" fill="#fff"/>
+        </svg>
+        <span class="logo-text"><strong>HOPPY</strong><small>CREATORS</small><em>3D PRINTING STUDIO</em></span>
+      </a>
+
+      <nav class="nav" id="nav">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="index.html#about">About</a>
+        <a href="contact.html" class="active">Contact</a>
+        <a href="#enquiryForm" class="btn btn-primary nav-cta-mobile">Get a Quote</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="icon-btn" aria-label="Search"><i class="bi bi-search"></i></button>
+        <a href="#enquiryForm" class="btn btn-primary btn-sm nav-cta">Get a Quote <i class="bi bi-arrow-right"></i></a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Menu"><i class="bi bi-list"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="ct-hero">
+    <div class="container ct-hero-inner">
+      <span class="eyebrow">CONTACT US</span>
+      <h1>Let's Bring<br><span>Your Ideas to Life</span></h1>
+      <p>Have a project in mind? Get in touch with us for custom 3D printing solutions, product development, prototyping and more.</p>
+
+      <div class="ct-hero-features">
+        <div class="hf"><span class="ring"><i class="bi bi-send"></i></span><p><b>Quick Response</b><br>We'll get back to you soon</p></div>
+        <div class="hf"><span class="ring"><i class="bi bi-people"></i></span><p><b>Expert Guidance</b><br>From idea to final product</p></div>
+        <div class="hf"><span class="ring"><i class="bi bi-shield-check"></i></span><p><b>Custom Solutions</b><br>For your unique needs</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FORM + INFO -->
+  <section class="ct-main">
+    <div class="container ct-grid">
+
+      <!-- Enquiry form -->
+      <div class="ct-card ct-form-card">
+        <span class="eyebrow small">SEND US A MESSAGE</span>
+        <h2>Request a Quote / Enquiry</h2>
+        <p class="ct-lead">Share your requirements with us. Our team will review your details and get back to you with the best solution.</p>
+
+        <form id="enquiryForm" novalidate>
+          <div class="f-row">
+            <div class="f-group">
+              <label for="name">Your Name <b>*</b></label>
+              <div class="f-input"><i class="bi bi-person"></i><input type="text" id="name" name="name" placeholder="Enter your name" required></div>
+              <small class="f-err">Please enter your name.</small>
+            </div>
+            <div class="f-group">
+              <label for="email">Email Address <b>*</b></label>
+              <div class="f-input"><i class="bi bi-envelope"></i><input type="email" id="email" name="email" placeholder="Enter your email" required></div>
+              <small class="f-err">Please enter a valid email address.</small>
+            </div>
+          </div>
+
+          <div class="f-row">
+            <div class="f-group">
+              <label for="phone">Phone Number <b>*</b></label>
+              <div class="f-input"><i class="bi bi-telephone"></i><input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required></div>
+              <small class="f-err">Please enter a valid phone number.</small>
+            </div>
+            <div class="f-group">
+              <label for="type">Project Type</label>
+              <div class="f-input f-select">
+                <select id="type" name="type">
+                  <option value="">Select project type</option>
+                  <option>3D Printing</option>
+                  <option>CAD Modelling</option>
+                  <option>Prototyping</option>
+                  <option>Custom Projects</option>
+                  <option>Functional Parts</option>
+                  <option>Miniatures &amp; Figurines</option>
+                  <option>Other</option>
+                </select>
+                <i class="bi bi-chevron-down"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="f-group">
+            <label for="subject">Subject <b>*</b></label>
+            <div class="f-input"><input type="text" id="subject" name="subject" placeholder="Brief subject" required></div>
+            <small class="f-err">Please enter a subject.</small>
+          </div>
+
+          <div class="f-group">
+            <label for="details">Project Details <b>*</b></label>
+            <div class="f-input f-area"><textarea id="details" name="details" rows="6" placeholder="Tell us about your project, requirements, quantity, material preference, expected timeline, etc." required></textarea></div>
+            <small class="f-err">Please describe your project.</small>
+          </div>
+
+          <div class="f-group">
+            <label for="files">Upload Reference Files (Optional)</label>
+            <div class="f-input f-file"><input type="file" id="files" name="files" multiple accept=".stl,.obj,.step,.stp,.png,.jpg,.jpeg,.pdf"></div>
+            <small class="f-hint">You can upload 3D model files (STL, OBJ, STEP, etc.) or reference images. Max 10MB per file.</small>
+            <small class="f-err" id="fileErr">One or more files are larger than 10MB.</small>
+          </div>
+
+          <button type="submit" class="btn btn-primary f-submit">Send Enquiry <i class="bi bi-arrow-right"></i></button>
+          <p class="f-success" id="formSuccess"><i class="bi bi-check-circle-fill"></i> Thank you! Your enquiry has been sent. We'll get back to you soon.</p>
+        </form>
+      </div>
+
+      <!-- Info + map -->
+      <div class="ct-side">
+
+        <div class="ct-card ct-info">
+          <div class="ct-info-text">
+            <span class="eyebrow small">CONTACT INFORMATION</span>
+            <h2>Get in Touch</h2>
+            <p class="ct-lead">Feel free to reach out to us through any of the following channels. We're here to help with your 3D printing needs.</p>
+
+            <ul class="ci-list">
+              <li><span class="ci-icon"><i class="bi bi-geo-alt-fill"></i></span><div><h4>Address</h4><p>Your Address Here<br>City, State, PIN Code</p></div></li>
+              <li><span class="ci-icon"><i class="bi bi-telephone-fill"></i></span><div><h4>Phone</h4><p>Your Phone Number</p></div></li>
+              <li><span class="ci-icon"><i class="bi bi-envelope-fill"></i></span><div><h4>Email</h4><p>your@email.com</p></div></li>
+              <li><span class="ci-icon"><i class="bi bi-clock-fill"></i></span><div><h4>Business Hours</h4><p>Monday - Saturday<br>9:00 AM - 6:00 PM</p></div></li>
+              <li><span class="ci-icon"><i class="bi bi-whatsapp"></i></span><div><h4>WhatsApp</h4><p>Chat with us for quick enquiries</p></div></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="ct-card ct-map">
+          <span class="eyebrow small">OUR LOCATION</span>
+          <h2>Find Us Here</h2>
+          <p class="ct-lead">Visit our studio to discuss your project in person.</p>
+          <div class="map-box">
+            <!-- Replace the src with your own Google Maps "Share > Embed a map" link -->
+            <iframe
+              src="https://www.google.com/maps?q=India&output=embed"
+              title="Studio location"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              allowfullscreen></iframe>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ + WHY + CTA -->
+  <section class="ct-bottom">
+    <div class="container ct-bottom-grid">
+
+      <div class="ct-card faq-card">
+        <span class="eyebrow small">FREQUENT QUESTIONS</span>
+        <h2>Common Enquiries</h2>
+        <p class="ct-lead">Here are some of the most common questions we receive. If you have any other questions, feel free to contact us.</p>
+
+        <div class="faq">
+          <div class="faq-item">
+            <button class="faq-q" type="button">What file formats do you accept for 3D printing? <i class="bi bi-chevron-right"></i></button>
+            <div class="faq-a"><p>We accept STL, OBJ and STEP files. If you only have an idea or a sketch, our CAD team can model it for you.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" type="button">How long does it take to complete a project? <i class="bi bi-chevron-right"></i></button>
+            <div class="faq-a"><p>Small prints are often ready in a few days. Larger or more complex projects take longer, and we confirm the timeline in your quote.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" type="button">Do you offer design or CAD modelling services? <i class="bi bi-chevron-right"></i></button>
+            <div class="faq-a"><p>Yes. We can turn your ideas, sketches or measurements into accurate, printable 3D models.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" type="button">What materials are available for 3D printing? <i class="bi bi-chevron-right"></i></button>
+            <div class="faq-a"><p>We work with PLA, ABS, PETG, Resin, Nylon and TPU. We can help you choose the right one for your project.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" type="button">Can I get a quote before placing an order? <i class="bi bi-chevron-right"></i></button>
+            <div class="faq-a"><p>Of course. Send us your requirements through the form above and we'll share a clear, no-obligation quote.</p></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="ct-card why-card">
+        <span class="eyebrow small">WHY CONTACT HOPPY CREATORS?</span>
+        <h2>We're Here to Help</h2>
+        <p class="ct-lead">From concept to completion, we'll guide you through every step of your 3D printing journey.</p>
+
+        <ul class="why-list">
+          <li><span class="why-icon"><i class="bi bi-chat-dots"></i></span><div><h4>Personalized Consultation</h4><p>Discuss your ideas and get expert recommendations.</p></div></li>
+          <li><span class="why-icon"><i class="bi bi-file-earmark-text"></i></span><div><h4>Accurate Quotation</h4><p>Transparent and competitive pricing.</p></div></li>
+          <li><span class="why-icon"><i class="bi bi-headset"></i></span><div><h4>Technical Support</h4><p>Assistance with file preparation and material selection.</p></div></li>
+          <li><span class="why-icon"><i class="bi bi-arrow-repeat"></i></span><div><h4>End-to-End Service</h4><p>From design support to final delivery.</p></div></li>
+        </ul>
+      </div>
+
+      <div class="ct-cta">
+        <div class="ct-cta-body">
+          <span class="cta-eyebrow">READY TO START?</span>
+          <h2>Let's Build<br>Something Amazing</h2>
+          <p>Have a project in mind? Get a custom quote for your 3D printing requirements today.</p>
+          <a href="#enquiryForm" class="btn btn-primary ct-cta-btn">Get a Quote <i class="bi bi-arrow-right"></i></a>
+          <ul class="ct-cta-points">
+            <li><i class="bi bi-check-circle-fill"></i> Quick Response</li>
+            <li><i class="bi bi-check-circle-fill"></i> Expert Guidance</li>
+            <li><i class="bi bi-check-circle-fill"></i> Custom Solutions</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="f-brand">
+        <a href="index.html" class="logo logo-light">
+          <svg viewBox="0 0 40 40" width="42" height="42" aria-hidden="true">
+            <path d="M20 3 35 11.5v17L20 37 5 28.5v-17z" fill="#ff5a00"/>
+            <path d="M20 3 35 11.5 20 20 5 11.5z" fill="#ff8a3d"/>
+            <path d="M20 20v17L5 28.5v-17z" fill="#d94700"/>
+            <path d="M20 14 28 18.5v9L20 32l-8-4.5v-9z" fill="#fff"/>
+          </svg>
+          <span class="logo-text"><strong>HOPPY</strong><small>CREATORS</small></span>
+        </a>
+        <p>Professional 3D printing solutions for prototypes, custom models, educational tools and innovative products.</p>
+        <div class="socials">
+          <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+      <div>
+        <h5>Quick Links</h5>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="contact.html" class="f-active">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Our Services</h5>
+        <ul>
+          <li><a href="#">3D Printing</a></li>
+          <li><a href="#">CAD Modelling</a></li>
+          <li><a href="#">Prototyping</a></li>
+          <li><a href="#">Custom Projects</a></li>
+          <li><a href="#">Finishing &amp; Post-Processing</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Get in Touch</h5>
+        <ul class="contact-list">
+          <li><i class="bi bi-geo-alt-fill"></i> Your Address Here</li>
+          <li><i class="bi bi-envelope-fill"></i> your@email.com</li>
+          <li><i class="bi bi-telephone-fill"></i> Your Phone Number</li>
+          <li><i class="bi bi-pin-map-fill"></i> Location, City</li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© 2026 Hoppy Creators. All rights reserved.</span>
+      <span><a href="#">Privacy Policy</a> &nbsp;|&nbsp; <a href="#">Terms of Service</a></span>
+    </div>
+  </footer>
+
+  <script src="contact.js"></script>
+</body>
+</html>

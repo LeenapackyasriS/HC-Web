@@ -1,0 +1,161 @@
+/* ===== Contact page (loads after style.css) ===== */
+
+/* Hero */
+.ct-hero{
+  background:var(--navy) url('images/Cinematic_Orange_Lattice_Vase_Printing_1.png') right center/cover no-repeat;
+  padding-top:72px;color:#fff;position:relative
+}
+.ct-hero-inner{padding-top:46px;padding-bottom:34px;min-height:300px}
+.ct-hero h1{font-size:clamp(2.1rem,4.6vw,3.2rem);font-weight:700;line-height:1.08;margin:10px 0 16px}
+.ct-hero h1 span{color:var(--orange)}
+.ct-hero p{max-width:460px;color:#dbe3ee;font-size:.95rem}
+.ct-hero-features{display:flex;gap:34px;flex-wrap:wrap;margin-top:30px}
+.ct-hero-features .hf p{font-size:.7rem;line-height:1.35;color:#cfd8e6}
+.ct-hero-features .hf p b{font-size:.8rem;color:#fff}
+
+/* Shared card bits */
+.ct-main{background:var(--light);padding:26px 0 18px}
+.ct-card{background:#fff;border:1px solid var(--border);border-radius:10px;padding:28px;box-shadow:0 4px 18px rgba(10,26,48,.05)}
+.ct-card h2{font-size:1.8rem;font-weight:700;color:var(--navy);line-height:1.2;margin:2px 0 8px}
+.ct-lead{color:var(--muted);font-size:.86rem;line-height:1.6}
+.eyebrow.small{font-size:.7rem;font-weight:600}
+
+.ct-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:22px;align-items:start}
+.ct-side{display:flex;flex-direction:column;gap:22px}
+
+/* Form */
+.ct-form-card .ct-lead{margin-bottom:22px}
+.f-row{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.f-group{margin-bottom:18px}
+.f-group label{display:block;font-size:.8rem;font-weight:600;color:var(--navy);margin-bottom:7px}
+.f-group label b{color:#e63946}
+.f-input{
+  display:flex;align-items:center;gap:10px;background:#fff;border:1px solid var(--border);
+  border-radius:6px;padding:0 14px;height:46px;color:#8d99ab;transition:.2s
+}
+.f-input:focus-within{border-color:var(--orange);box-shadow:0 0 0 3px rgba(255,90,0,.12)}
+.f-input input,.f-input select,.f-input textarea{
+  width:100%;border:none;outline:none;background:none;font:inherit;font-size:.84rem;color:var(--text)
+}
+.f-input input::placeholder,.f-input textarea::placeholder{color:#a3adbd}
+.f-select{position:relative}
+.f-select select{appearance:none;-webkit-appearance:none;cursor:pointer;padding-right:24px}
+.f-select i{position:absolute;right:14px;pointer-events:none;font-size:.8rem}
+.f-area{height:auto;align-items:flex-start;padding:12px 14px}
+.f-area textarea{resize:vertical;min-height:120px}
+.f-file{padding:0 6px}
+.f-file input{font-size:.82rem;color:var(--muted)}
+.f-file input::file-selector-button{
+  background:#eef2f7;border:1px solid var(--border);border-radius:5px;padding:8px 14px;margin-right:12px;
+  font:inherit;font-size:.8rem;color:var(--navy);cursor:pointer;transition:.2s
+}
+.f-file input::file-selector-button:hover{background:var(--orange);color:#fff;border-color:var(--orange)}
+.f-hint{display:block;margin-top:8px;font-size:.72rem;color:var(--muted)}
+.f-err{display:none;margin-top:5px;font-size:.72rem;color:#e63946}
+.f-group.invalid .f-input{border-color:#e63946}
+.f-group.invalid .f-err{display:block}
+.f-submit{width:100%;justify-content:center;padding:15px;font-size:.95rem;margin-top:8px}
+.f-success{display:none;margin-top:16px;padding:12px 16px;border-radius:6px;background:#e9f8ef;color:#1b7a43;font-size:.85rem;align-items:center;gap:10px}
+.f-success.show{display:flex}
+
+/* Contact info card (with image) */
+.ct-info{
+  position:relative;overflow:hidden;padding:0;
+  background:#fff url('images/Lattice_Vase_and_3D_Printed_Wonders.png') right center/auto 100% no-repeat
+}
+.ct-info::before{
+  content:"";position:absolute;inset:0;
+  background:linear-gradient(90deg,#fff 0%,#fff 46%,rgba(255,255,255,.55) 68%,rgba(255,255,255,0) 100%)
+}
+.ct-info-text{position:relative;z-index:1;padding:28px;max-width:62%}
+.ct-info .ct-lead{margin-bottom:18px}
+.ci-list{display:flex;flex-direction:column;gap:14px}
+.ci-list li{display:flex;gap:14px;align-items:center}
+.ci-icon{
+  flex:none;width:44px;height:44px;border-radius:50%;background:#ffe3d3;color:var(--orange);
+  display:grid;place-items:center;font-size:1.2rem
+}
+.ci-list h4{font-size:.88rem;color:var(--navy);line-height:1.2}
+.ci-list p{font-size:.78rem;color:var(--muted);line-height:1.4}
+
+/* Map */
+.ct-map .ct-lead{margin-bottom:16px}
+.map-box{border-radius:8px;overflow:hidden;border:1px solid var(--border);height:210px;background:#e8edf3}
+.map-box iframe{width:100%;height:100%;border:0;display:block}
+
+/* Bottom row */
+.ct-bottom{background:var(--light);padding:4px 0 56px}
+.ct-bottom-grid{display:grid;grid-template-columns:1.1fr 1fr .8fr;gap:22px;align-items:stretch}
+.ct-bottom .ct-card h2{font-size:1.6rem}
+
+/* FAQ */
+.faq-card .ct-lead{margin-bottom:18px}
+.faq{display:flex;flex-direction:column;gap:10px}
+.faq-item{border:1px solid var(--border);border-radius:6px;overflow:hidden;background:#fff;transition:.2s}
+.faq-q{
+  width:100%;display:flex;justify-content:space-between;align-items:center;gap:12px;text-align:left;
+  padding:13px 16px;font-size:.82rem;font-weight:500;color:var(--navy)
+}
+.faq-q i{flex:none;font-size:.8rem;transition:.3s}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .35s ease}
+.faq-a p{padding:0 16px 14px;font-size:.8rem;color:var(--muted);line-height:1.6}
+.faq-item.open{border-color:var(--orange)}
+.faq-item.open .faq-q{color:var(--orange)}
+.faq-item.open .faq-q i{transform:rotate(90deg)}
+
+/* Why list */
+.why-card .ct-lead{margin-bottom:20px}
+.why-list{display:flex;flex-direction:column;gap:18px}
+.why-list li{display:flex;gap:14px;align-items:center}
+.why-icon{
+  flex:none;width:46px;height:46px;border-radius:50%;background:var(--orange);color:#fff;
+  display:grid;place-items:center;font-size:1.2rem;box-shadow:0 6px 14px rgba(255,90,0,.28)
+}
+.why-list h4{font-size:.88rem;color:var(--navy);line-height:1.2}
+.why-list p{font-size:.76rem;color:var(--muted);line-height:1.4}
+
+/* CTA card */
+.ct-cta{
+  border-radius:10px;overflow:hidden;color:#fff;
+  background:#0a1f3d url('images/Orange_Gears_in_a_Moody_Workshop.png') center top/cover no-repeat
+}
+.ct-cta-body{padding:150px 22px 24px}
+.cta-eyebrow{display:block;color:var(--orange);font-size:.7rem;font-weight:700;letter-spacing:.5px}
+.ct-cta h2{font-size:1.7rem;font-weight:700;line-height:1.15;margin:4px 0 10px}
+.ct-cta p{font-size:.8rem;color:#dbe3ee;margin-bottom:16px;line-height:1.55}
+.ct-cta-btn{width:100%;justify-content:center;padding:14px;margin-bottom:16px}
+.ct-cta-points{display:flex;flex-direction:column;gap:10px}
+.ct-cta-points li{display:flex;gap:10px;align-items:center;font-size:.82rem}
+.ct-cta-points i{color:var(--orange);font-size:1.05rem}
+
+/* Footer active link */
+.footer .f-active{color:var(--orange)}
+
+/* Reveal */
+.reveal{opacity:0;transform:translateY(26px);transition:.7s ease}
+.reveal.show{opacity:1;transform:none}
+
+/* ===== Responsive ===== */
+@media (max-width:1100px){
+  .ct-bottom-grid{grid-template-columns:1fr 1fr}
+  .ct-cta{grid-column:1 / -1}
+  .ct-cta-body{padding:170px 28px 28px;max-width:520px}
+}
+@media (max-width:900px){
+  .ct-grid{grid-template-columns:1fr}
+  .ct-hero{background-position:72% center}
+  .ct-hero::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,26,48,.94) 35%,rgba(10,26,48,.5))}
+  .ct-hero>*{position:relative}
+  .ct-hero-features{gap:20px 26px}
+}
+@media (max-width:680px){
+  .ct-bottom-grid{grid-template-columns:1fr}
+  .f-row{grid-template-columns:1fr;gap:0}
+  .ct-card{padding:22px 18px}
+  .ct-card h2,.ct-bottom .ct-card h2{font-size:1.45rem}
+  .ct-info{background-size:cover;background-position:70% center}
+  .ct-info::before{background:rgba(255,255,255,.9)}
+  .ct-info-text{max-width:100%;padding:22px 18px}
+  .ct-hero-inner{padding-top:36px;min-height:0}
+  .ct-cta-body{padding:150px 20px 24px}
+}

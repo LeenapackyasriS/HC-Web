@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hoppy Creators | 3D Printing Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <div class="container nav-wrap">
+      <a href="#home" class="logo">
+        <svg viewBox="0 0 40 40" width="42" height="42" aria-hidden="true">
+          <path d="M20 3 35 11.5v17L20 37 5 28.5v-17z" fill="#ff5a00"/>
+          <path d="M20 3 35 11.5 20 20 5 11.5z" fill="#ff8a3d"/>
+          <path d="M20 20v17L5 28.5v-17z" fill="#d94700"/>
+          <path d="M20 14 28 18.5v9L20 32l-8-4.5v-9z" fill="#fff"/>
+        </svg>
+        <span class="logo-text"><strong>HOPPY</strong><small>CREATORS</small><em>3D PRINTING STUDIO</em></span>
+      </a>
+
+      <nav class="nav" id="nav">
+        <a href="#home" class="active">Home</a>
+        <a href="services.html">Services</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="#about">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="contact.html" class="btn btn-primary nav-cta-mobile">Get a Quote</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="icon-btn" aria-label="Search"><i class="bi bi-search"></i></button>
+        <a href="#contact" class="btn btn-primary btn-sm nav-cta">Get a Quote <i class="bi bi-arrow-right"></i></a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Menu"><i class="bi bi-list"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <span class="eyebrow">3D PRINTING STUDIO</span>
+        <h1>TURN IDEAS INTO<br><span>REAL PRODUCTS</span></h1>
+        <p>Professional 3D printing solutions for prototypes, custom models, educational tools and innovative products.</p>
+        <div class="hero-btns">
+          <a href="#contact" class="btn btn-primary">Get a Quote <i class="bi bi-arrow-right"></i></a>
+          <a href="#portfolio" class="btn btn-outline">Explore Our Work</a>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="hero-features">
+        <div class="hf"><span class="ring"><i class="bi bi-printer"></i></span><p>High Quality<br>3D Prints</p></div>
+        <div class="hf"><span class="ring"><i class="bi bi-pencil-square"></i></span><p>Custom<br>Solutions</p></div>
+        <div class="hf"><span class="ring"><i class="bi bi-cpu"></i></span><p>Modern<br>Technology</p></div>
+        <div class="hf"><span class="ring"><i class="bi bi-lightbulb"></i></span><p>From Concept<br>to Creation</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="section services" id="services">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">OUR SERVICES</span>
+          <h2>Complete 3D Printing Solutions</h2>
+          <p>We provide end-to-end 3D printing services to bring your ideas to life with precision, quality and reliability.</p>
+        </div>
+        <a href="#" class="link-underline">View All Services <i class="bi bi-arrow-right"></i></a>
+      </div>
+
+      <div class="service-grid">
+        <article class="service-card">
+          <div class="service-img"><img src="images/service1.png" alt="3D Printing"></div>
+          <div class="service-body">
+            <h3>3D Printing</h3>
+            <p>High quality prints using various materials and technologies.</p>
+            <a href="#" class="learn">Learn More <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </article>
+        <article class="service-card">
+          <div class="service-img"><img src="images/service2.png" alt="CAD Modelling"></div>
+          <div class="service-body">
+            <h3>CAD Modelling</h3>
+            <p>Turn your ideas into accurate, printable digital models.</p>
+            <a href="#" class="learn">Learn More <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </article>
+        <article class="service-card">
+          <div class="service-img"><img src="images/service3.png" alt="Prototyping"></div>
+          <div class="service-body">
+            <h3>Prototyping</h3>
+            <p>Rapid prototyping for product development and testing.</p>
+            <a href="#" class="learn">Learn More <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </article>
+        <article class="service-card">
+          <div class="service-img"><img src="images/service4.png" alt="Custom Projects"></div>
+          <div class="service-body">
+            <h3>Custom Projects</h3>
+            <p>Unique, tailored solutions for your specific needs.</p>
+            <a href="#" class="learn">Learn More <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="stats">
+    <div class="container stats-grid">
+      <div class="stat"><i class="bi bi-file-earmark-text"></i><h3><span class="count" data-target="150">0</span>+</h3><p>Projects Completed</p></div>
+      <div class="stat"><i class="bi bi-people"></i><h3><span class="count" data-target="100">0</span>+</h3><p>Happy Customers</p></div>
+      <div class="stat"><i class="bi bi-gear"></i><h3><span class="count" data-target="10">0</span>+</h3><p>Materials &amp; Finishes</p></div>
+      <div class="stat"><i class="bi bi-trophy"></i><h3><span class="count" data-target="3">0</span>+</h3><p>Years of Experience</p></div>
+    </div>
+  </section>
+
+  <!-- FEATURED PROJECTS -->
+  <section class="section" id="portfolio">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">OUR WORK</span>
+          <h2>Featured Projects</h2>
+          <p>A glimpse of our recent 3D printing projects across different industries.</p>
+        </div>
+        <div class="filters" id="filters">
+          <button class="chip active" data-filter="all">All</button>
+          <button class="chip" data-filter="figurines">Figurines</button>
+          <button class="chip" data-filter="prototypes">Prototypes</button>
+          <button class="chip" data-filter="functional">Functional Parts</button>
+          <button class="chip" data-filter="architectural">Architectural</button>
+          <button class="chip" data-filter="custom">Custom</button>
+        </div>
+      </div>
+
+      <div class="project-grid" id="projectGrid">
+        <a href="#" class="project" data-cat="figurines">
+          <img src="images/p1.png" alt="Fantasy Figurine">
+          <span class="project-label">Fantasy Figurine <i class="bi bi-arrow-right"></i></span>
+        </a>
+        <a href="#" class="project" data-cat="prototypes functional">
+          <img src="images/p2.png" alt="Functional Prototype">
+          <span class="project-label">Functional Prototype <i class="bi bi-arrow-right"></i></span>
+        </a>
+        <a href="#" class="project" data-cat="architectural">
+          <img src="images/p3.png" alt="Architectural Model">
+          <span class="project-label">Architectural Model <i class="bi bi-arrow-right"></i></span>
+        </a>
+        <a href="#" class="project" data-cat="custom">
+          <img src="images/p4.png" alt="Cosplay Helmet">
+          <span class="project-label">Cosplay Helmet <i class="bi bi-arrow-right"></i></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="process">
+    <div class="container">
+      <span class="eyebrow">HOW IT WORKS</span>
+      <h2>Our Simple Process</h2>
+      <p class="process-sub">From your idea to the final product, we make 3D printing easy and transparent.</p>
+
+      <div class="steps">
+        <div class="step">
+          <span class="step-icon"><i class="bi bi-file-earmark-arrow-up"></i></span>
+          <h4>01</h4><h5>Share Your Idea</h5>
+          <p>Tell us about your project or share your design file.</p>
+        </div>
+        <i class="bi bi-arrow-right step-arrow"></i>
+        <div class="step">
+          <span class="step-icon"><i class="bi bi-chat-square-text"></i></span>
+          <h4>02</h4><h5>Get a Quote</h5>
+          <p>We review your requirements and provide a clear quote.</p>
+        </div>
+        <i class="bi bi-arrow-right step-arrow"></i>
+        <div class="step">
+          <span class="step-icon"><i class="bi bi-printer"></i></span>
+          <h4>03</h4><h5>We Print</h5>
+          <p>Your model is printed with precision.</p>
+        </div>
+        <i class="bi bi-arrow-right step-arrow"></i>
+        <div class="step">
+          <span class="step-icon"><i class="bi bi-truck"></i></span>
+          <h4>04</h4><h5>Delivery</h5>
+          <p>Quality check and deliver to you.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="about-media">
+      <img src="images/home_about.png" alt="3D printer in action">
+      <button class="play-btn" id="playBtn" aria-label="Play video"><i class="bi bi-play-fill"></i></button>
+    </div>
+    <div class="about-content">
+      <span class="eyebrow">ABOUT US</span>
+      <h2>Passionate About 3D Printing</h2>
+      <p>We are a 3D printing company dedicated to turning ideas into high-quality physical creations. Our focus is on providing reliable, innovative and customised 3D printing solutions for individuals, educators, businesses and creators.</p>
+      <div class="about-features">
+        <div class="af"><span class="af-icon"><i class="bi bi-bullseye"></i></span><div><h6>Quality Focused</h6><p>Precision in every print</p></div></div>
+        <div class="af"><span class="af-icon"><i class="bi bi-grid-1x2"></i></span><div><h6>Custom Solutions</h6><p>Tailored to your needs</p></div></div>
+        <div class="af"><span class="af-icon"><i class="bi bi-clock-history"></i></span><div><h6>Reliable Turnaround</h6><p>From concept to delivery</p></div></div>
+        <div class="af"><span class="af-icon"><i class="bi bi-headset"></i></span><div><h6>Customer Support</h6><p>We're with you at every step</p></div></div>
+      </div>
+      <a href="#" class="btn btn-primary btn-sm">Learn More About Us <i class="bi bi-arrow-right"></i></a>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="section testimonials">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">TESTIMONIALS</span>
+          <h2>What Our Customers Say</h2>
+        </div>
+        <div class="arrows">
+          <button class="arrow-btn" id="prevT" aria-label="Previous"><i class="bi bi-arrow-left"></i></button>
+          <button class="arrow-btn active" id="nextT" aria-label="Next"><i class="bi bi-arrow-right"></i></button>
+        </div>
+      </div>
+
+      <div class="t-track" id="tTrack">
+        <div class="t-card">
+          <i class="bi bi-quote q"></i>
+          <p>Great quality and excellent support. They helped me turn my idea into a beautiful final product.</p>
+          <div class="t-user"><span class="avatar">AK</span><div><h6>A. Kumar</h6><small>Product Designer</small></div><span class="stars">★★★★★</span></div>
+        </div>
+        <div class="t-card">
+          <i class="bi bi-quote q"></i>
+          <p>The printing quality was amazing and delivered on time. Highly recommended!</p>
+          <div class="t-user"><span class="avatar">PS</span><div><h6>Priya S.</h6><small>Student</small></div><span class="stars">★★★★★</span></div>
+        </div>
+        <div class="t-card">
+          <i class="bi bi-quote q"></i>
+          <p>Professional, reliable and easy to work with. Will definitely come back for future projects.</p>
+          <div class="t-user"><span class="avatar">RM</span><div><h6>Rahul M.</h6><small>Entrepreneur</small></div><span class="stars">★★★★★</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta" id="contact">
+    <div class="container cta-inner">
+      <div class="cta-text">
+        <h2>Ready to Bring Your Ideas to Life?</h2>
+        <p>Get a custom quote for your 3D printing project today.</p>
+        <div class="hero-btns">
+          <a href="mailto:your@email.com" class="btn btn-primary btn-sm">Get a Quote <i class="bi bi-arrow-right"></i></a>
+          <a href="tel:+910000000000" class="btn btn-outline btn-sm">Contact Us</a>
+        </div>
+      </div>
+      <ul class="cta-points">
+        <li><i class="bi bi-check-circle"></i> Quick Response</li>
+        <li><i class="bi bi-check-circle"></i> Expert Guidance</li>
+        <li><i class="bi bi-check-circle"></i> Custom Solutions</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="f-brand">
+        <a href="#home" class="logo logo-light">
+          <svg viewBox="0 0 40 40" width="42" height="42" aria-hidden="true">
+            <path d="M20 3 35 11.5v17L20 37 5 28.5v-17z" fill="#ff5a00"/>
+            <path d="M20 3 35 11.5 20 20 5 11.5z" fill="#ff8a3d"/>
+            <path d="M20 20v17L5 28.5v-17z" fill="#d94700"/>
+            <path d="M20 14 28 18.5v9L20 32l-8-4.5v-9z" fill="#fff"/>
+          </svg>
+          <span class="logo-text"><strong>HOPPY</strong><small>CREATORS</small></span>
+        </a>
+        <p>Professional 3D printing solutions for prototypes, custom models, educational tools and innovative products.</p>
+        <div class="socials">
+          <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+      <div>
+        <h5>Quick Links</h5>
+        <ul><li><a href="#home">Home</a></li><li><a href="#services">Services</a></li><li><a href="#portfolio">Portfolio</a></li><li><a href="#about">About</a></li><li><a href="#contact">Contact</a></li></ul>
+      </div>
+      <div>
+        <h5>Our Services</h5>
+        <ul><li><a href="#">3D Printing</a></li><li><a href="#">CAD Modelling</a></li><li><a href="#">Prototyping</a></li><li><a href="#">Custom Projects</a></li><li><a href="#">Finishing &amp; Post-Processing</a></li></ul>
+      </div>
+      <div>
+        <h5>Get in Touch</h5>
+        <ul class="contact-list">
+          <li><i class="bi bi-geo-alt-fill"></i> Your Address Here</li>
+          <li><i class="bi bi-envelope-fill"></i> your@email.com</li>
+          <li><i class="bi bi-telephone-fill"></i> Your Phone Number</li>
+          <li><i class="bi bi-pin-map-fill"></i> Location, City</li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© 2026 Hoppy Creators. All rights reserved.</span>
+      <span><a href="#">Privacy Policy</a> &nbsp;|&nbsp; <a href="#">Terms of Service</a></span>
+    </div>
+  </footer>
+
+  <!-- VIDEO MODAL (placeholder) -->
+  <div class="modal" id="videoModal">
+    <div class="modal-box">
+      <button class="modal-close" id="closeModal" aria-label="Close"><i class="bi bi-x-lg"></i></button>
+      <!-- Replace the src with your own YouTube / video link -->
+      <iframe id="videoFrame" src="" title="About video" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
